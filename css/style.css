@@ -1,0 +1,620 @@
+/* reset semua */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* fontface */
+@font-face {
+    font-family: 'axiformabold';
+    src: url('../font/webfontkit-20201116-020859/kastelov_-_axiforma_bold-webfont.woff2') format('woff2'),
+         url('../font/webfontkit-20201116-020859/kastelov_-_axiforma_bold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'axiformalight';
+    src: url('../font/webfontkit-20201116-020859/kastelov_-_axiforma_light-webfont.woff2') format('woff2'),
+         url('../font/webfontkit-20201116-020859/kastelov_-_axiforma_light-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'axiformamedium';
+    src: url('../font/webfontkit-20201116-020859/kastelov_-_axiforma_medium-webfont.woff2') format('woff2'),
+         url('../font/webfontkit-20201116-020859/kastelov_-_axiforma_medium-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'axiformaregular';
+    src: url('../font/webfontkit-20201116-020859/kastelov_-_axiforma_regular-webfont.woff2') format('woff2'),
+         url('../font/webfontkit-20201116-020859/kastelov_-_axiforma_regular-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'axiformasemibold';
+    src: url('../font/webfontkit-20201116-020859/kastelov_-_axiforma_semibold-webfont.woff2') format('woff2'),
+         url('../font/webfontkit-20201116-020859/kastelov_-_axiforma_semibold-webfont.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'axiformathin';
+    src: url('../font/webfontkit-20201116-020859/kastelov_-_axiforma_thin-webfont.woff2') format('woff2'),
+         url('../font/webfontkit-20201116-020859/kastelov_-_axiforma_thin-webfont.woff') format('woff');
+}
+/* akhir fontface */
+
+/* setting body */
+body {
+    background-color: rgb(206, 206, 206);
+    font-family: 'axiformaregular';
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+/* container */
+.container {
+    width: 1200px;
+    background-color: white;
+    margin: 0 auto;
+    color: #515151;
+    box-shadow: 0 6px 8px rgba(0, 0, 0,0.4);
+}
+
+.container h1 {
+    font-family: 'axiformasemibold';
+}
+
+.container h2 {
+    font-family: 'axiformasemibold';
+}
+
+.container p {
+    font-family: 'axiformaregular';
+}
+
+/* header */
+.header {
+    height: 600px;
+    background-image: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px 70px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0,0.4);
+}
+
+/* topbar */
+.topbar {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    align-items: center;
+}
+
+/* topbar navigasi link */
+.topbar ul {
+    display: grid;
+    justify-items: end;
+    align-items: center;
+    grid-template-columns: repeat(5,1fr);
+    list-style-type: none;
+}
+
+.navigasi li a {
+    color: #515151;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navigasi li a:hover {
+    color: #EE391B;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* topbar login */
+.topbar .login {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: end;
+}
+
+.topbar .btnmasuk {
+    border: unset;
+    background-color: unset;
+    font-size: 17px;
+    font-family: 'axiformaregular';
+    color:  #515151;
+}
+
+.topbar button.btnmasuk:hover {
+    color: #EE391B;
+    font-weight: bold;
+}
+
+.topbar .btndaftar {
+    font-family: 'axiformaregular';
+    border: unset;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: #EE391B;
+    color: #E6E6E6;
+    width: 85px;
+    height: 35px;
+} 
+
+.topbar button.btndaftar:hover {
+    background-color: #515151;
+    color:  rgb(223, 223, 223);
+}
+
+/* deskripsi */
+.deskripsi {
+    display: flex;
+    margin-top: 50px;
+}
+
+.hero {
+    order: 2;
+}
+
+.caption {
+    text-align: left;
+    order: 1;
+}
+
+.caption h1 {
+    color: #EE391B;
+    font-weight: bold;
+    font-size: 33px;
+    line-height: 45px;
+    font-family: 'axiformabold';
+    margin-bottom: 15px;
+}
+
+.caption p {
+    width: 350px;
+    margin-bottom: 10px;
+    line-height: 30px;
+    font-size: 16px;
+}
+
+button.btndeskripsi {
+    background-color: #EE391B;
+    color:  rgb(223, 223, 223);
+    font-size: 17px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 120px;
+    height: 40px;
+    border: unset;
+}
+
+button.btndeskripsi:hover {
+    background-color:  #515151;
+    color:  rgb(223, 223, 223);;
+}
+
+/* about */
+section.about {
+    margin: 50px 90px;
+    padding-top: 40px;
+    /* border: solid 1px red; */ 
+    height: 450px;
+}
+
+section.about h1 {
+    font-family: 'axiformabold';
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+section.about .about-satu p {
+    text-align: left;
+    margin-left: 40px;
+    line-height: 25px;
+    color: #515151;
+}
+
+section.about span {
+    color:  #EE391B;
+}
+
+section.about .about-satu {
+    margin-bottom: 70px;
+    display: flex;
+    align-items: center;
+}
+
+section.about .about-dua {
+    display: flex;
+    align-items: center;
+}
+
+section.about .about-dua p {
+    text-align: left;
+    margin-left: 80px;
+    line-height: 25px;
+    color: #515151;
+}
+
+/* services */
+.services {
+   /*  border: solid 1px black;  */
+    margin: 50px 90px;
+    padding-top: 40px;
+}
+
+.services h1 {
+    font-family: 'axiformabold';
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+.services span {
+    color:  #EE391B;
+}
+
+.layanan {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 35px;
+    text-align: center;
+}
+
+.layanan h2 {
+    margin-top: 15px;
+}
+
+.layanan p {
+    margin-top: 10px;
+    line-height: 22px;
+}
+
+.satu {
+    background-color: #E6E6E6;
+    padding: 30px 40px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0,0.4);
+}
+
+.dua {
+    background-color:  #E6E6E6;
+    padding: 30px 40px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0,0.4);
+}
+
+.tiga {
+    background-color:  #E6E6E6;
+    padding: 30px 40px;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0,0.4);
+}
+
+/* section 2 kenapa */
+section.why {
+    background-color: #33435A;
+    height: 375px;
+    margin: 50px 90px;
+    padding-top: 40px;
+    padding-left: 110px;
+    padding-right: 110px;
+    color: #E6E6E6;
+    text-align: center;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0,0.4);
+}
+
+.why h1 {
+    font-family: 'axiformabold';
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+.why span {
+    color: #EFCA2B;
+}
+
+.why p {
+    line-height: 25px;
+    font-size: 16px;
+}
+/* presentasi */
+.presentasi {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 60px;
+    text-align: center;
+}
+
+.presentasi h1 {
+    margin-bottom: 15px;
+    font-size: 40px;
+    margin-top: 40px;
+    color: #EFCA2B;
+}
+
+.presentasi p {
+    font-family: 'axiformalight'; 
+    font-size: 14px;
+    line-height: 22px;
+}
+
+/* keunggulan */
+section.keunggulan {
+    /* border:  solid 1px red; */
+    margin: 50px 90px;
+    padding-top: 40px;
+}
+
+section.keunggulan h1 {
+    font-family: 'axiformabold';
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 50px;
+}
+
+section.keunggulan p {
+    line-height: 22px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+section.keunggulan span {
+    color:  #EE391B;
+}
+
+.unggul {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 35px;
+}
+
+.desk-satu,
+.desk-dua,
+.desk-tiga,
+.desk-empat {
+    display: grid;
+    grid-template-columns: 0.5fr 2fr;
+    height: 110px;
+}
+
+/* layanan paket jasa */
+.paket {
+    margin: 50px 90px;
+    padding-top: 40px;
+    /* border: solid 1px red; */
+    height: 550px;
+    background-color: #E6E6E6;
+}
+
+.paket h1 {
+    font-family: 'axiformabold';
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 60px;
+    
+}
+
+.jasa {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 55px;
+    height: 340px;
+    text-align: center;
+    padding: 0 40px;
+    
+}
+
+.jasa h2 {
+    background-color: #EE391B;
+    padding: 9px 0;
+}
+
+.jasa h3 {
+    margin: 30px 0;
+    font-size: 27px;
+}
+
+.jasa p {
+    text-align: left;
+    margin: 14px auto;
+    margin-left: 25px;
+    width: 250px;
+    font-size: 11px;
+}
+
+button.btnpaket-satu,
+button.btnpaket-dua,
+button.btnpaket-tiga {
+    margin-top: 10px;
+    border: unset;
+    background-color:  #EE391B;
+    color: #E6E6E6;
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+button.btnpaket-satu:hover,
+button.btnpaket-dua:hover,
+button.btnpaket-tiga:hover {
+    background-color:  #ec6c55;
+}
+
+
+.jasa-satu {
+    background-color: #33435A;
+    color: #E6E6E6;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0,0.4);
+}
+
+.jasa-dua {
+    background-color: #33435A;
+    transform: scale(1.15);
+    color: #E6E6E6;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0,0.4);
+}
+
+.jasa-tiga {
+    background-color: #33435A;
+    color: #E6E6E6;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0,0.4);
+}
+
+/* testimoni */
+.testimoni {
+    margin: 50px 90px;
+    padding-top: 40px;
+}
+
+.testimoni h1 {
+    font-family: 'axiformabold';
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 60px;
+}
+
+.testimoni span {
+    color:  #EE391B;
+}
+
+.pelanggan {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 50px;
+    text-align: center;
+    height: 700px;
+}
+
+.pelanggan h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.pelanggan p {
+    line-height: 20px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.pelanggan-satu {
+    margin-bottom: 40px;
+}
+.pelanggan-dua {
+    margin-bottom: 40px;
+}
+.pelanggan-tiga {
+    margin-bottom: 40px;
+}
+
+/* client IRStudio */
+.client {
+    margin: 50px 90px;
+    padding-top: 40px;
+    text-align: center;
+    height: 750px;
+}
+
+.client h1 {
+    font-family: 'axiformabold';
+    font-size: 35px;
+    margin-bottom: 60px;
+}
+
+.client span {
+    color:  #EE391B;
+}
+
+/* Footer */
+footer.footer {
+    background-color: #666666;
+    margin: 50px 0;
+    padding-top: 40px;
+    color: #FFFFFF;
+    height: 400px;
+}
+
+footer.footer h2 {
+    margin-bottom: 25px;
+    font-size: 18px;
+    text-align: left;
+}
+
+footer.footer p {
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-family: 'axiformalight';
+}
+
+p.copy {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 50px;
+}
+
+p.alamat {
+    line-height: 28px;
+}
+
+.footerdesk {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 0.8fr;
+    gap: 20px;
+    padding: 0 50px;
+}
+.footer ul {
+    list-style-type: none;
+}
+
+.footer a {
+    text-decoration: none;
+    color: #FFFFFF;
+    line-height: 28px;
+    margin-bottom: 10px;
+    font-size: 11px;
+    font-family: 'axiformalight';
+}
+
+.footer a:hover {
+    color: #729FD6;
+}
+
+.hubungi {
+    padding: 0 15px;
+}
+.tentang {
+    padding: 0 15px;
+}
+.pelayanan {
+    padding: 0 15px;
+}
+.bantuan {
+    padding: 0 15px;
+}
+.ikuti {
+    padding: 0 15px;
+    text-align: center;
+}
+
+.ikuti h2 {
+    line-height: 25px;
+}
+
+.ikuti img {
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.aplikasi {
+    display: flex;
+    height: 50px;
+    
+}
+.apple {
+    margin-top: -50px;
+}
+
+.ikuti h2.app {
+    font-size: 13px;
+    text-align: left;
+}
